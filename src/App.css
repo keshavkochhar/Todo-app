@@ -1,0 +1,201 @@
+/* Container to center everything */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full screen height */
+  background-color: #f4f7fa; /* Soft background */
+}
+
+/* General container */
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif; /* Clean, modern font */
+  color: #333;
+  background-color: #fff; /* White background for the task box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow for the container */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.app-container:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Hover shadow effect */
+}
+
+/* Task form */
+.task-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.task-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.task-form button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.task-form button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Task list */
+.task-list {
+  margin-top: 20px;
+}
+
+/* Task item */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+  background-color: white; /* Set background color for all task items */
+}
+
+/* Hover effect for task item */
+.task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Task status colors */
+.task-item.pending {
+  background-color: #fff7cd; /* Pending tasks background */
+  border-left: 4px solid #ffca28; /* Yellow border */
+}
+
+.task-item.in-progress {
+  background-color: #e7f3ff; /* In-progress background */
+  border-left: 4px solid #42a5f5; /* Blue border */
+}
+
+.task-item.completed {
+  background-color: #dfffe7; /* Completed background */
+  border-left: 4px solid #66bb6a; /* Green border */
+  opacity: 0.8;
+}
+
+/* Task name */
+.task-name {
+  flex: 1;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Task status dropdown */
+.task-status select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.task-status select:hover {
+  border-color: #007bff;
+  box-shadow: 0px 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Action buttons */
+.task-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.task-actions button:hover {
+  transform: scale(1.1);
+}
+
+.edit-btn {
+  color: #007bff;
+}
+
+.delete-btn {
+  color: red;
+}
+
+.edit-btn:hover {
+  color: #0056b3;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}
+
+/* Animation for task list */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-item {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fonts & Colors */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Card style */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}

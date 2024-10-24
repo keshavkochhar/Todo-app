@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif; /* Change font as needed */
+    background-color: #f0f4f8; /* Light background color */
+    color: #333; /* Dark text color */
+  }
+  
+  .task-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* White background for form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px;
+    margin: 20px 0; /* Spacing around the form */
+    transition: transform 0.2s ease; /* Animation for hover */
+  }
+  
+  .task-form:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+  }
+  
+  .task-form input {
+    flex: 1; /* Allow input to take available space */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 10px; /* Space between input and button */
+    font-size: 1em; /* Adjust font size */
+    transition: border-color 0.2s; /* Transition effect */
+  }
+  
+  .task-form input:focus {
+    border-color: #3498db; /* Change border color on focus */
+    outline: none; /* Remove outline */
+  }
+  
+  .task-form button {
+    background-color: #3498db; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em; /* Adjust font size */
+    transition: background-color 0.2s, transform 0.2s; /* Animation for hover */
+  }
+  
+  .task-form button:hover {
+    background-color: #2980b9; /* Darker button color on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+  }
+  
+  .task-form button:disabled {
+    background-color: #bdc3c7; /* Disabled button color */
+    cursor: not-allowed; /* Show not-allowed cursor */
+  }
+  

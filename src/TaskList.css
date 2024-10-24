@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif; /* You can change the font */
+    background-color: #f0f4f8; /* Light background color */
+    color: #333; /* Dark text color */
+  }
+  
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .task-item {
+    background-color: #fff; /* White card background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 10px 0;
+    padding: 15px;
+    transition: transform 0.2s ease; /* Animation for hover */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-item:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+  }
+  
+  .task-name {
+    font-size: 1.2em; /* Larger font for task name */
+    font-weight: bold; /* Bold task name */
+    color: #2c3e50; /* Darker color for task name */
+  }
+  
+  .task-status select {
+    padding: 5px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded select box */
+    margin-left: 10px;
+    transition: border-color 0.2s; /* Transition effect */
+  }
+  
+  .task-status select:hover {
+    border-color: #3498db; /* Change border color on hover */
+  }
+  
+  .task-actions button {
+    background-color: #3498db; /* Primary button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s; /* Animation for hover */
+  }
+  
+  .task-actions button:hover {
+    background-color: #2980b9; /* Darker button color on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+  }
+  
+  .edit-btn {
+    background-color: #f39c12; /* Edit button color */
+  }
+  
+  .edit-btn:hover {
+    background-color: #e67e22; /* Darker edit button color on hover */
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c; /* Delete button color */
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b; /* Darker delete button color on hover */
+  }
+  
